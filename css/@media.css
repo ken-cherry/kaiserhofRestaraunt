@@ -1,0 +1,331 @@
+/* responsive */
+@media screen and (max-width: 320px) {
+  .logo img {
+    height: 10rem;
+    width: 10rem;
+  }
+  body {
+    line-height: 1.3;
+  }
+
+  /* news page */
+  .news-container img,
+  .news-container .news-content {
+    height: 4rem;
+    width: 9rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  /* NAVBAR */
+  .navbar {
+    width: 45vw;
+    max-width: 20rem;
+    transition: var(--transition-slow);
+  }
+  .info .social-icons {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    font-size: 2rem;
+    display: grid;
+  }
+  /* FOOD SECTION */
+  .food-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-img {
+    height: 12rem;
+    width: 12rem;
+    transition: var(--transition);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* food section */
+  .project-img {
+    height: 15rem;
+    width: 15rem;
+    transition: var(--transition);
+  }
+  /* staff page */
+  .container-staff {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 0;
+  }
+  .info-staff {
+    width: 90%;
+  }
+  .info-staff,
+  .info-staff-lexi {
+    display: grid;
+  }
+  .info-staff-lexi {
+    width: 90%;
+    display: grid;
+    margin: 0 auto;
+  }
+  .info-staff p,
+  .info-staff-lexi p {
+    margin-bottom: 0;
+  }
+  /* menu page */
+  .menu-page {
+    color: white;
+    transition: var(--transition-slow);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* INTRO's */
+  .text {
+    display: grid;
+  }
+  .intro1,
+  .intro2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* FOOTER */
+  footer {
+    display: grid;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+  }
+  .info {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+  }
+  .contact-info p {
+    margin-bottom: auto;
+  }
+  .hours,
+  .contact-info {
+    display: grid;
+    align-content: center;
+    font-size: 1.2rem;
+  }
+  a .fa-phone,
+  a .fa-directions {
+    font-size: 1rem;
+  }
+  .hours h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .info .social-icons {
+    padding-top: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  /* intro's */
+  .intro1,
+  .intro2 {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  /* food section*/
+  .food-section {
+    padding-top: 0;
+  }
+  .project-img {
+    height: 17rem;
+    width: 17rem;
+    transition: var(--transition);
+  }
+
+  /* footer */
+  .hours,
+  .contact-info {
+    font-size: 1.5rem;
+  }
+  a .fa-phone,
+  a .fa-directions {
+    font-size: 1.2rem;
+  }
+
+  /* news page */
+  .article-container {
+    grid-template-columns: repeat(3, 1fr);
+    transition: var(--transition-slow);
+  }
+  .news-container img,
+  .news-container iframe,
+  .news-container video {
+    transition: var(--transition-slow);
+    height: 10rem;
+    width: 15rem;
+  }
+
+  /* staff page */
+  .staff-info {
+    display: grid;
+    justify-self: end;
+  }
+  .staff-info-lexi {
+    display: grid;
+    justify-self: start;
+  }
+  .info-staff {
+    width: 80%;
+    justify-self: center;
+  }
+  .info-staff-lexi {
+    width: 80%;
+    display: grid;
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  /* navbar logo */
+  .logo {
+    margin-top: 10rem;
+  }
+
+  /* news page */
+  .news-container img,
+  .news-container iframe,
+  .news-container video {
+    transition: var(--transition-slow);
+    height: 15rem;
+    width: 20rem;
+  }
+  .video-text {
+    font-size: 2rem;
+    transition: var(--transition-slow);
+  }
+
+  /* menu page */
+  .menu img {
+    height: 50rem;
+    width: 50rem;
+    object-fit: contain;
+  }
+
+  /* staff page */
+  .staff-info {
+    display: grid;
+    justify-self: end;
+  }
+  .staff-photo {
+    height: 25rem;
+    width: 25rem;
+  }
+  .staff-info-lexi {
+    display: grid;
+    justify-self: start;
+  }
+  .info-staff {
+    width: 80%;
+    justify-self: center;
+    font-size: 1.75rem;
+  }
+  .info-staff-lexi {
+    width: 80%;
+    display: grid;
+    justify-self: end;
+    font-size: 1.75rem;
+  }
+
+  /* footer */
+  .hours,
+  .contact-info {
+    display: grid;
+    align-content: center;
+    font-size: 2rem;
+  }
+  .hours h4 {
+    font-size: 2.5rem;
+  }
+  .info {
+    grid-gap: 10rem;
+  }
+}
+
+/* cell phone css */
+/* Common mobile screen resolutions include: 480×800, 640×1136, 720×1280, 750×1334, 1080×1920, 
+and 1440×2560. The most common resolution is 720x1280. */
+
+@media screen and (orientation: landscape) and (min-device-width: 360px) and (max-device-width: 800px) {
+  /* navbar */
+  .nav-links {
+    line-height: 1;
+  }
+  .logo {
+    margin-top: 1rem;
+  }
+  .logo img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  /* food section */
+  .project-img {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  /* footer */
+  .contact-info {
+    margin-bottom: 0;
+  }
+  .hours p {
+    margin-bottom: 0;
+  }
+  .info .social-icons {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  /* menu page */
+  .menu img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  /* news page */
+  .news-container img,
+  .news-container iframe,
+  .news-container video {
+    height: 5rem;
+    width: 10rem;
+    object-fit: cover;
+  }
+
+  /* staff page */
+  .staff-photo {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 3px black solid;
+  }
+  .info-staff p,
+  .info-staff-lexi p {
+    font-size: 1rem;
+  }
+}
+
+@media (orientation: portrait) and (min-device-height: 600px) and (max-device-height: 1280px) {
+  .food-section {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+}
