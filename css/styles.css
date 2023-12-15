@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .background,
 .section-text {
   color: white;
@@ -108,13 +112,13 @@
 }
 .container1-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../src/images/bierGirls2.png);
+    url(../src/images/bierGirls2.jpg);
   background-attachment: fixed;
   margin-top: 0;
 }
 .container2-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../src/images/diningRoom2.png);
+    url(../src/images/diningRoom2.jpg);
 }
 .container3-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
