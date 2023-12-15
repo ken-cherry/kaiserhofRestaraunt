@@ -22,15 +22,17 @@ window.addEventListener("DOMContentLoaded", function () {
   let displayIcons = social.map(function (item) {
     console.log(item);
 
-    return `<ul class="icons">
+    return `<div class="icons">
+              <ul class="icons">
                 <li>
                     <a href=${item.link} class=${item.icon} target="_blank"></a>
                 </li>
-            </ul>`;
+              </ul>
+            </div>`;
   });
   displayIcons = displayIcons.join("");
   console.log(displayIcons);
 
-  //   socialMedia.innerHTML = displayIcons;
+  socialMedia.innerHTML = displayIcons;
   socialMedia.innerHTML = displayIcons;
 });

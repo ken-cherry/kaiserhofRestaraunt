@@ -72,38 +72,6 @@ html {
   display: inline-block;
 }
 
-/* social icons */
-.social-icons {
-  display: none;
-}
-.icons {
-  font-size: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.social-icons a:hover {
-  font-size: 2.5rem;
-}
-.fa-facebook {
-  color: #3b5998;
-}
-.fa-yelp {
-  color: #c41200;
-}
-.fa-instagram {
-  color: #fff;
-  background: #d6249f;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  border-radius: 8px;
-}
-
 /* container images */
 .background {
   height: 100vh;
@@ -220,25 +188,21 @@ html {
   }
 }
 
-/* footer */
-footer {
-  overflow: hidden;
-}
+/* 
+==============
+FOOTER
+==============
+*/
 footer {
   background-color: black;
   display: block;
   color: white;
+  overflow: hidden;
 }
-.hours,
-.hours h4,
-.contact-info {
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-  font-size: 0.9rem;
-}
+/* .info {
+  display: grid;
+  place-items: center;
+} */
 .contact-info {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -257,18 +221,56 @@ a .fa-directions {
   color: white;
   font-size: 0.9rem;
 }
+.hours,
+.hours h4,
+.contact-info {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
 .hours h4 {
   text-decoration: underline;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
+
+/* social icons */
 footer .social-icons {
-  display: grid;
+  /* display: grid;
   text-align: center;
-  align-items: center;
+  align-items: center; */
   padding-top: 1rem;
 }
-
+.icons {
+  font-size: 2rem;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+}
+.social-icons a:hover {
+  font-size: 2.5rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-yelp {
+  color: #c41200;
+}
+.fa-instagram {
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 8px;
+}
 /* menu page*/
 .menu-page {
   color: black;
@@ -298,24 +300,6 @@ footer .social-icons {
 }
 .menu p {
   margin-bottom: 0;
-}
-
-/* NEWS PAGE II */
-.article-container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: center;
-}
-.news-container p {
-  margin-bottom: 0;
-}
-.news-container img,
-.news-container iframe,
-.news-container video {
-  height: 8rem;
-  width: 13rem;
-  object-fit: cover;
 }
 
 /* staff page */
