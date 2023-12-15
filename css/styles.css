@@ -108,45 +108,43 @@
 }
 .container1-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/bierGirls2.png);
+    url(../src/images/bierGirls2.png);
   background-attachment: fixed;
   margin-top: 0;
 }
 .container2-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/diningRoom2.png);
+    url(../src/images/diningRoom2.png);
 }
 .container3-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/docks.png);
+    url(../src/images/pexels2.png);
   background-attachment: fixed;
+  display: grid;
+  place-content: center;
 }
 .container4-img {
   background-image: url(../images/diningRoom2.png);
 }
 .container5-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/newsPage.png);
+    url(../src/images/newsPage.png);
 }
 .container6-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/biergarten.png);
+    url(../src/images/grill.jpg);
 }
 .container7-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/inside2.png);
+    url(../src/images/customers.jpg);
 }
 .container8-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/inside1.png);
-}
-.container9-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/food_4.png);
+    url(../src/images/inside1.png);
 }
 .container10-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/impossible.png);
+    url(../src/images/impossible.png);
 }
 
 /* intro's */
@@ -209,7 +207,8 @@ footer {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.fa-directions:hover, .fa-phone:hover{
+.fa-directions:hover,
+.fa-phone:hover {
   color: var(--german-yellow);
 }
 a .fa-phone,
@@ -231,20 +230,34 @@ footer .social-icons {
 }
 
 /* menu page*/
-.menu-page{
+.menu-page {
   color: black;
 }
 .menu-container {
+  max-width: 768px;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center;
+  align-items: center; */
+  /* margin: 1rem auto; */
+  /* padding-top: 5rem; */
+  place-content: center;
+}
+.menu {
+  place-content: center;
+  /* max-width: 15rem; */
 }
 .menu img {
-  height: 35rem;
-  width: 35rem;
-  object-fit: contain;
+  height: 7rem;
+  width: 7rem;
+  border-radius: var(--radius);
+  border: 3px black solid;
+  object-fit: cover;
+}
+.menu p {
+  margin-bottom: 0;
 }
 
 /* NEWS PAGE II */

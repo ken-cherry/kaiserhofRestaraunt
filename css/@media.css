@@ -212,9 +212,11 @@
 
   /* menu page */
   .menu img {
-    height: 50rem;
-    width: 50rem;
-    object-fit: contain;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 3px black solid;
   }
 
   /* staff page */

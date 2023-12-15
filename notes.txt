@@ -493,3 +493,51 @@ footer {
     font-size: 1rem;;
   } */
 }
+
+<div class="nav-center">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <!-- nav links -->
+      <div class="nav-links">
+        <!-- nav links go here -->
+      </div>
+      <!-- logo -->
+      <div class="logo">
+        <img src="../src/images/kaiserhofLOGO.png" alt="kaiserhof-logo" />
+      </div>
+      <!-- social media icons -->
+      <div class="social-icons">
+        <ul class="icons">
+          <li>
+            <a href="https://www.facebook.com/Kaiserhof-Restaurant-and-Biergarten-111648901412933"
+              class="fab fa-facebook" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/kaiserhofrestaurant" class="fab fa-instagram" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://www.yelp.com/biz/kaiserhof-german-american-restaurant-san-diego-2?osq=kaiserhof"
+              class="fa-brands fa-yelp" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- social media icons -->
+      <div class="social-icons">
+        <ul class="icons">
+          <li>
+            <a href="https://www.facebook.com/Kaiserhof-Restaurant-and-Biergarten-111648901412933"
+              class="fab fa-facebook" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/kaiserhofrestaurant" class="fab fa-instagram" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://www.yelp.com/biz/kaiserhof-german-american-restaurant-san-diego-2?osq=kaiserhof"
+              class="fa-brands fa-yelp" target="_blank"></a>
+          </li>
+        </ul>
+      </div>

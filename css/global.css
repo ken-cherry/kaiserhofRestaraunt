@@ -41,7 +41,7 @@ html {
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
   --german-black: #000000;
-  --german-red:#dd0000;
+  --german-red: #dd0000;
   --german-yellow: #ffcc00;
 
   /* fonts  */
@@ -79,6 +79,7 @@ body {
   color: var(--textColor);
   width: 100vw;
   height: 100vh;
+  text-transform: capitalize;
 }
 
 p {
