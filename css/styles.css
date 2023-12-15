@@ -1,6 +1,6 @@
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 .background,
 .section-text {
@@ -12,7 +12,11 @@ html {
   text-align: center;
 }
 
-/* navbar*/
+/* 
+===============
+NAVBAR
+===============
+*/
 .toggle-nav {
   position: fixed;
   top: 5%;
@@ -193,16 +197,19 @@ html {
 FOOTER
 ==============
 */
-footer {
+.footer {
+  display: grid;
+  place-content: center;
   background-color: black;
   display: block;
   color: white;
   overflow: hidden;
 }
-/* .info {
+.info {
   display: grid;
   place-items: center;
-} */
+  /* max-width: 768px; */
+}
 .contact-info {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -236,18 +243,11 @@ a .fa-directions {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-
-/* social icons */
-footer .social-icons {
-  /* display: grid;
-  text-align: center;
-  align-items: center; */
-  padding-top: 1rem;
-}
 .icons {
   font-size: 2rem;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
 }
 .social-icons a:hover {
   font-size: 2.5rem;
@@ -271,10 +271,14 @@ footer .social-icons {
   );
   border-radius: 8px;
 }
-/* menu page*/
-.menu-page {
+/* 
+===============
+NAVBAR
+===============
+*/
+/* .menu-page {
   color: black;
-}
+} */
 .menu-container {
   max-width: 768px;
   height: 100vh;
@@ -301,16 +305,10 @@ footer .social-icons {
 .menu p {
   margin-bottom: 0;
 }
-
-/* staff page */
-.info-staff,
-.info-staff-lexi {
-  display: none;
-}
 .container-staff {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 .staff-name h3,
@@ -319,6 +317,7 @@ footer .social-icons {
 }
 .staff-info {
   display: grid;
+  /* place-content: center; */
 }
 .staff-photo {
   height: 20rem;
@@ -326,4 +325,13 @@ footer .social-icons {
   object-fit: cover;
   border-radius: var(--radius);
   border: 3px black solid;
+}
+@media screen and (max-width: 767px) {
+  .container-staff {
+    grid-template-columns: 1fr;
+  }
+  .info-staff-right,
+  .info-staff-left {
+    display: none;
+  }
 }
