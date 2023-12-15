@@ -1,4 +1,4 @@
-const socialIcons = [
+const social = [
   {
     id: 1,
     link: "placeholder",
@@ -16,17 +16,19 @@ const socialIcons = [
   },
 ];
 
-const socialMedia = document.querySelector(".social-icons");
+// const socialMedia = document.querySelector(".social-icons");
 
-window.addEventListener("DOMContentLoaded", function () {
-  let displayIcons = socialIcons.map(function (item) {
-    return `
-         <ul class="icons">
-          <li>
-            <a href="https://www.facebook.com/Kaiserhof-Restaurant-and-Biergarten-111648901412933"
-              class="fab fa-facebook" target="_blank"></a>
-          </li>
-        </ul>
-        `;
-  });
-});
+// window.addEventListener("DOMContentLoaded", function () {
+//   let displayIcons = social.map(function (item) {
+//     console.log(item);
+//     return `<ul class="icons">
+//                 <li>
+//                     <a href=${item.link} class=${item.icon} target="_blank"></a>
+//                 </li>
+//             </ul>`;
+//   });
+//   displayIcons = displayIcons.join("");
+//   console.log(displayIcons);
+
+//   socialMedia.innerHTML = displayIcons;
+// });
