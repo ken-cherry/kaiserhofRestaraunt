@@ -181,14 +181,14 @@ NAVBAR
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 768px) and (min-height: 640px) {
+@media screen and (min-width: 768px) {
   .project-img {
     height: 15rem;
     width: 15rem;
     transition: var(--transition-slow);
   }
 }
-@media screen and (min-width: 1170px) and (min-height: 640px) {
+@media screen and (min-width: 1170px) {
   .food-section {
     max-width: 968px;
     column-gap: 100px;
